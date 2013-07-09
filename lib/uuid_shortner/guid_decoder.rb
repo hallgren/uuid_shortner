@@ -1,6 +1,6 @@
 module UuidShortner
 	module GuidDecoder
-		def decode short_uuid
+		def stretch short_uuid
 			guid_as_int = bijective_decode short_uuid
 	 		guid_as_hex = guid_as_int.to_s(16)
 	 		insert_uuid_hyphens guid_as_hex

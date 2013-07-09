@@ -1,6 +1,6 @@
 module UuidShortner
 	module GuidEncoder
-		def encode uuid
+		def compress uuid
 			clean_guid = uuid.gsub(/[^a-zA-Z0-9 ]/,'')
 			guid_as_hex = clean_guid.hex
 			short_id = bijective_encode guid_as_hex
