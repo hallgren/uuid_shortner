@@ -15,7 +15,7 @@ class ProductController < ActionController::Base
       #Backend
       uuid = create_product
 
-      redirect_to "/product/compress(uuid)"
+      redirect_to "/product/#{compress(uuid)}"
     end
 
     def index
